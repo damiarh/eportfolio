@@ -1,0 +1,222 @@
+/* ===== General Page Layout ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: url("/eportfolio/images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: url("/eportfolio/images/bg2.jpg");
+    background-size: cover;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* ===== Content Container (like card) ===== */
+.container, .about-card, .content-box {
+    max-width: 800px;
+    margin: 50px auto;
+    background: url("../images/bg2.jpg");
+	background-size: cover:
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Headings & Text ===== */
+h1, h2, h3 {
+    text-align: center;
+    color: #3CB371; /* green */
+}
+p {
+    font-size: 18px;
+    color: #3CB371; /* green */
+    text-align: center;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: #DB7093; /* pink */
+    padding: 10px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background: #3CB371; /* green */
+    border-radius: 6px;
+}
+
+/* ===== About Me Profile Card ===== */
+.about-card {
+    text-align: center;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* ===== Lists (Activities, Education, etc.) ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: rgba(255,255,255,0.85);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+ul li strong {
+    color: #DB7093; /* pink title highlight */
+}
+/* ===== Form Styling (Edit About Me) ===== */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-box label {
+    font-weight: bold;
+    color: #DB7093; /* pink */
+    margin-bottom: 5px;
+}
+
+.form-box input, 
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #DB7093;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-box input:focus, 
+.form-box textarea:focus {
+    border-color: #3CB371; /* green when active */
+    box-shadow: 0 0 5px rgba(60,179,113,0.5);
+}
+
+.form-box button {
+    background: #DB7093;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #3CB371; /* turns green on hover */
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #DB7093, #3CB371);
+    padding: 15px;
+    text-align: center;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: #FFD700; /* gold hover */
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* --- About Page Styling --- */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 25px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.about-text p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* --- Public Page Lists (Activities, Education, Qualifications, Interests) --- */
+.public-list {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+}
+.public-list li {
+    background: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.public-list li:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+.activity-title {
+    color: #DB7093; /* pink */
+    font-weight: bold;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+}
